@@ -1,0 +1,4 @@
+﻿  Test.cpp
+D:\3rdYearSecondSemester\Nicks_Engine\Upgrade_Engine\Upgrade_Engine\src\Test.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\3rdYearSecondSemester\Nicks_Engine\Upgrade_Engine\Upgrade_Engine\src\Test.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Upgrade_Engine.vcxproj -> D:\3rdYearSecondSemester\Nicks_Engine\Upgrade_Engine\bin\Debug-x64\Upgrade_Engine\Upgrade_Engine.dll
