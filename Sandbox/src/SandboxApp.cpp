@@ -1,6 +1,14 @@
 #include <Upgrade.h>
 
-void main()
+class Sandbox : public UpgradeE::Application
 {
+public:
+	Sandbox() {}
 	
+	~Sandbox() {}
+};
+
+UpgradeE::Application* UpgradeE::CreateApplication()
+{
+	return new Sandbox();
 }
