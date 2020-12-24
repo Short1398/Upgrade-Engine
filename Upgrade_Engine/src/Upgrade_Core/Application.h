@@ -12,5 +12,8 @@ namespace UpgradeE
 		void Run();
 	};
 
+	//TODO be defined in client
+	Application* CreateApplication();
+
 }
 
