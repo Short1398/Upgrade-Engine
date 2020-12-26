@@ -6,5 +6,8 @@
 
 #include "Upgrade_Core/Application.h"
 
+//Logging Wrapper
+#include "Upgrade_Core/Log.h"
+
 //Entry Point
 #include "Upgrade_Core/EntryPoint.h"

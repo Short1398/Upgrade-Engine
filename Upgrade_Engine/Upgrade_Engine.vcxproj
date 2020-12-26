@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Upgrade_Core\Log.h" />
     <ClInclude Include="src\Upgrade.h" />
     <ClInclude Include="src\Upgrade_Core\Application.h" />
     <ClInclude Include="src\Upgrade_Core\Core.h" />
     <ClInclude Include="src\Upgrade_Core\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Upgrade_Core\Log.cpp" />
     <ClCompile Include="src\Upgrade_Core\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -66,6 +68,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>HZ_PLATFORM_WINDOWS;HZ_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Upgrade_Engine\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -80,6 +83,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>HZ_PLATFORM_WINDOWS;HZ_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Upgrade_Engine\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
