@@ -1,7 +1,5 @@
-# Directories
+#Files
+
 .vs/
 bin/
 bin-int/
-
-# Files
-*.user

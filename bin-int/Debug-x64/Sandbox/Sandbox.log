@@ -1,6 +1,7 @@
 ﻿  SandboxApp.cpp
-D:\3rdYearSecondSemester\Nicks_Engine\Upgrade_Engine\Upgrade_Engine\src\Upgrade_Core\Log.h(17,54): warning C4251: 'UpgradeE::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'UpgradeE::Log'
+D:\3rdYearSecondSemester\Nicks_Engine\Upgrade_Engine\Upgrade_Engine\src\Upgrade_Core\Log.h(19,54): warning C4251: 'UpgradeE::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'UpgradeE::Log'
 D:\3rdYearSecondSemester\Nicks_Engine\Upgrade_Engine\Upgrade_Engine\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
-D:\3rdYearSecondSemester\Nicks_Engine\Upgrade_Engine\Upgrade_Engine\src\Upgrade_Core\Log.h(18,56): warning C4251: 'UpgradeE::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'UpgradeE::Log'
+D:\3rdYearSecondSemester\Nicks_Engine\Upgrade_Engine\Upgrade_Engine\src\Upgrade_Core\Log.h(20,56): warning C4251: 'UpgradeE::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'UpgradeE::Log'
 D:\3rdYearSecondSemester\Nicks_Engine\Upgrade_Engine\Upgrade_Engine\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
+  LINK : D:\3rdYearSecondSemester\Nicks_Engine\Upgrade_Engine\bin\Debug-x64\Sandbox\Sandbox.exe not found or not built by the last incremental link; performing full link
   Sandbox.vcxproj -> D:\3rdYearSecondSemester\Nicks_Engine\Upgrade_Engine\bin\Debug-x64\Sandbox\Sandbox.exe

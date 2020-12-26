@@ -1,11 +1,15 @@
 #include "Log.h"
 
-namespace UpgradeE
+
+namespace UpgradeE 
 {
 	std::shared_ptr<spdlog::logger> Log::s_CoreLogger;
 	std::shared_ptr<spdlog::logger> Log::s_ClientLogger;
-	void UpgradeE::Log::Init()
+
+	
+	void Log::Init()
 	{
+		//Set String pattern for logging (start color [time stamp] name: log message end color
 		spdlog::set_pattern("%^[%T] %n: %v%$");
 
 		s_CoreLogger = spdlog::stdout_color_mt("UPGRADE ENGINE");

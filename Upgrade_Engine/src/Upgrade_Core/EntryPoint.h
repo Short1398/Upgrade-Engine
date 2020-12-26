@@ -8,8 +8,6 @@
 		printf("Welcome to Upgrade Engine\n:");
 
 		UpgradeE::Log::Init();
-		HZ_CORE_ERROR("Better be working");
-		HZ_WARNING("APP is working too");
 
 		auto app = UpgradeE::CreateApplication();
 		app->Run();
