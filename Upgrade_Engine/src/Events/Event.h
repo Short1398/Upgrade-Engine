@@ -39,7 +39,7 @@ namespace UpgradeE
 //----------------------------------------------------------------------------------------------------------------------//
 	class UPGRADENGINE_API Event
 	{
-		friend class EventDispatcher;
+		friend class EventDispathcer;
 
 	public:
 		virtual EventType GetEventType() const = 0;
@@ -51,11 +51,12 @@ namespace UpgradeE
 		{
 			return GetCategoryFlags() & category;
 		}
-	protected:
+	public:
 		bool m_Handled = false;
 	};
 
-	class EventDispatcher 
+
+	class EventDispatcher
 	{
 		template<typename T>
 		using EventFn = std::function<bool(T&)>;
@@ -84,10 +85,4 @@ namespace UpgradeE
 	{
 		return os << e.ToString();
 	}
-
-	/*inline bool operator==(const EventType& lhs, const EventType& rhs)
-	{
-		
-		return lhs.isEqual(rhs) && lhs.bar == rhs.bar;
-	}*/
 }

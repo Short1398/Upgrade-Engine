@@ -1,5 +1,9 @@
 #include "uepch.h"
 #include "Application.h"
+#include "Events/ApplicationEvent.h"
+#include "Log.h"
+
+#include <GLFW/glfw3.h>
 
 #include "Log.h"
 
@@ -12,6 +16,7 @@ namespace UpgradeE
 	Application::Application()
 	{
 		m_Window = std::unique_ptr<Window>(Window::Create());
+
 		m_Window->SetEventCallback(BIND_EVENT_FN(OnEvent));
 	}
 
@@ -26,6 +31,7 @@ namespace UpgradeE
 			glClear(GL_COLOR_BUFFER_BIT);
 			m_Window->OnUpdate();
 		}
+
 	}
 	void Application::OnEvent(Event& e)
 	{
@@ -39,5 +45,6 @@ namespace UpgradeE
 	{
 		m_Running = false;
 		return true;
+
 	}
 }

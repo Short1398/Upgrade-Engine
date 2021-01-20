@@ -2,7 +2,9 @@
 #include "Core.h"
 #include "Events/Event.h"
 #include "Window.h"
+
 #include "Events/ApplicationEvent.h"
+
 namespace UpgradeE
 {
 
@@ -18,6 +20,7 @@ namespace UpgradeE
 
 	private:
 		bool OnWindowClose(WindowCloseEvent& e);
+
 		std::unique_ptr<Window> m_Window;
 		bool m_Running = true;
 	};

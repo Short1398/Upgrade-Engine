@@ -1,19 +1,23 @@
 #include "uepch.h"
 #include "WindowsWindow.h"
 
+
 //Include all engine events
 #include "Events/ApplicationEvent.h"
 #include "Events/KeyEvent.h"
 #include "Events/MouseEvent.h"
 
+
 namespace UpgradeE
 {
 	static bool s_GLFWInitialized = false; //Ensure glfw is initialized only once, but still allow the user to have ultiple windows if need be
+
 
 	static void GLFWErrorCallback(int error, const char* description)
 	{
 		HZ_CORE_ERROR("GLFW erro ({0}): {1}", error, description);
 	}
+
 
 	Window* Window::Create(const WindowProps& props)
 	{
@@ -43,7 +47,9 @@ namespace UpgradeE
 			//TODO glfw system shutdown --> use glfwTerminate
 			int success = glfwInit();
 			HZ_CORE_ASSERT(success, "Could not initialize GLFW!");
+
 			glfwSetErrorCallback(GLFWErrorCallback);
+
 			s_GLFWInitialized = true;
 		}
 
@@ -51,6 +57,7 @@ namespace UpgradeE
 		glfwMakeContextCurrent(m_Window);
 		glfwSetWindowUserPointer(m_Window, &m_Data);
 		SetVSync(true);
+
 
 		//Set GLFW Interface callbacks
 		glfwSetWindowSizeCallback(m_Window, [](GLFWwindow* window, int width, int height)
